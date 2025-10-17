@@ -1,0 +1,229 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.crp":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"paa":"query.get_equipped_item_name=='crpa' && query.is_using_item && !query.is_sneaking"},
+						{"pba":"query.get_equipped_item_name=='crpb' && query.is_using_item && !query.is_sneaking"},
+						{"pca":"query.get_equipped_item_name=='crpc' && query.is_using_item && !query.is_sneaking"},
+						{"pda":"query.get_equipped_item_name=='crpd' && query.is_using_item && !query.is_sneaking"},
+						{"pea":"query.get_equipped_item_name=='crpe' && query.is_using_item && !query.is_sneaking"},
+						{"pfa":"query.get_equipped_item_name=='crpf' && query.is_using_item && !query.is_sneaking"},
+						{"pga":"query.get_equipped_item_name=='crpg' && query.is_using_item && !query.is_sneaking"},
+						{"pha":"query.get_equipped_item_name=='crph' && query.is_using_item && !query.is_sneaking"},
+						{"pia":"query.get_equipped_item_name=='crpi' && query.is_using_item && !query.is_sneaking"},
+						{"pab":"query.get_equipped_item_name=='crpa' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 1"},
+						{"pbb":"query.get_equipped_item_name=='crpb' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 5"},
+						{"pcb":"query.get_equipped_item_name=='crpc' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 5"},
+						{"pdb":"query.get_equipped_item_name=='crpd' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 5"},
+						{"peb":"query.get_equipped_item_name=='crpe' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 5"},
+						{"pfb":"query.get_equipped_item_name=='crpf' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"pgb":"query.get_equipped_item_name=='crpg' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"phb":"query.get_equipped_item_name=='crph' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"pib":"query.get_equipped_item_name=='crpi' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 1000"}
+					]						
+				},
+				"paa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 萝卜(5)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:crpb"
+					]
+				},
+				"pba": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 甘蔗(5)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:crpc"
+					]
+				},
+				"pca": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 土豆(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:crpd"
+					]
+				},
+				"pda": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 甜菜根(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:crpe"
+					]
+				},
+				"pea": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 南瓜(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:crpf"
+					]
+				},
+				"pfa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 西瓜(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:crpg"
+					]
+				},
+				"pga": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 竹子(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:crph"
+					]
+				},
+				"pha": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 村民(1000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:crpi"
+					]
+				},
+				"pia": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 小麦种子(1)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:crpa"
+					]
+				},
+				"pab": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s wheat_seeds",
+						"/scoreboard players add @s score -1"
+					]
+				},
+				"pbb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s carrot",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"pcb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s sugar_cane",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"pdb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s potato",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"peb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s beetroot_seeds",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"pfb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s pumpkin_seeds",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"pgb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s melon_seeds",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"phb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s bamboo",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"pib": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon villager",
+						"/scoreboard players add @s score -1000"
+					]
+				}
+			}
+		}
+ 	}
+ }

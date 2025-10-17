@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "raj"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:re"
+      },
+      {
+        "item": "spider_eye"
+      }
+    ],
+    "result": {
+      "item": "items:cb",
+      "count": 1
+    }
+  }
+}

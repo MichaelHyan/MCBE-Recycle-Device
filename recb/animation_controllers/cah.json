@@ -1,0 +1,109 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.cah":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"haa":"query.get_equipped_item_name=='caha' && query.is_using_item && !query.is_sneaking"},
+						{"hba":"query.get_equipped_item_name=='cahb' && query.is_using_item && !query.is_sneaking"},
+						{"hca":"query.get_equipped_item_name=='cahc' && query.is_using_item && !query.is_sneaking"},
+						{"hda":"query.get_equipped_item_name=='cahd' && query.is_using_item && !query.is_sneaking"},
+						{"hab":"query.get_equipped_item_name=='caha' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 1"},
+						{"hbb":"query.get_equipped_item_name=='cahb' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"hcb":"query.get_equipped_item_name=='cahc' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 100"},
+						{"hdb":"query.get_equipped_item_name=='cahd' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 1000"}
+					]						
+				},
+				"haa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 点数(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:cahb"
+					]
+				},
+				"hba": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 点数(100)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:cahc"
+					]
+				},
+				"hca": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 点数(1000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:cahd"
+					]
+				},
+				"hda": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 点数(1)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:caha"
+					]
+				},
+				"hab": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:ca",
+						"/scoreboard players add @s score -1"
+					]
+				},
+				"hbb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:cb",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"hcb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:cc",
+						"/scoreboard players add @s score -100"
+					]
+				},
+				"hdb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:cd",
+						"/scoreboard players add @s score -1000"
+					]
+				}
+			}
+		}
+ 	}
+ }

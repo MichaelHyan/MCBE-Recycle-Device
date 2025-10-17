@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "rm"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:re"
+      },
+      {
+        "item": "carrot"
+      }
+    ],
+    "result": {
+      "item": "items:ca",
+      "count": 5
+    }
+  }
+}

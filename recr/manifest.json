@@ -1,0 +1,19 @@
+{
+"format_version":1,
+"header":{
+"description":"作者：韩言悦欣 zz纸张神探st",
+"name":"回收利用装置",
+"platform_locked":false,
+"uuid":"a345bc6d-044c-4609-b247-88f7cf2f5004",
+"version":[1,0,3]
+},
+"modules":[
+{
+"description":"作者：韩言悦欣 zz纸张神探st",
+"type":"resources",
+"uuid":"ec74ab76-e306-4690-adce-68befb73e011",
+"version":[1,0,3]
+}
+],
+"metadata": { "product_type": "addon" }
+}

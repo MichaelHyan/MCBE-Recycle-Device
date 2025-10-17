@@ -1,0 +1,229 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.frm":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"faa":"query.get_equipped_item_name=='frma' && query.is_using_item && !query.is_sneaking"},
+						{"fba":"query.get_equipped_item_name=='frmb' && query.is_using_item && !query.is_sneaking"},
+						{"fca":"query.get_equipped_item_name=='frmc' && query.is_using_item && !query.is_sneaking"},
+						{"fda":"query.get_equipped_item_name=='frmd' && query.is_using_item && !query.is_sneaking"},
+						{"fea":"query.get_equipped_item_name=='frme' && query.is_using_item && !query.is_sneaking"},
+						{"ffa":"query.get_equipped_item_name=='frmf' && query.is_using_item && !query.is_sneaking"},
+						{"fga":"query.get_equipped_item_name=='frmg' && query.is_using_item && !query.is_sneaking"},
+						{"fha":"query.get_equipped_item_name=='frmh' && query.is_using_item && !query.is_sneaking"},
+						{"fia":"query.get_equipped_item_name=='frmi' && query.is_using_item && !query.is_sneaking"},
+						{"fab":"query.get_equipped_item_name=='frma' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 50"},
+						{"fbb":"query.get_equipped_item_name=='frmb' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 60"},
+						{"fcb":"query.get_equipped_item_name=='frmc' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 40"},
+						{"fdb":"query.get_equipped_item_name=='frmd' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 80"},
+						{"feb":"query.get_equipped_item_name=='frme' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 400"},
+						{"ffb":"query.get_equipped_item_name=='frmf' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 30"},
+						{"fgb":"query.get_equipped_item_name=='frmg' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"fhb":"query.get_equipped_item_name=='frmh' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 250"},
+						{"fib":"query.get_equipped_item_name=='frmi' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 50"}
+					]						
+				},
+				"faa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 羊(60)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:frmb"
+					]
+				},
+				"fba": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 鸡(40)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:frmc"
+					]
+				},
+				"fca": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 牛(80)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:frmd"
+					]
+				},
+				"fda": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 马(400)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:frme"
+					]
+				},
+				"fea": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 兔子(30)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:frmf"
+					]
+				},
+				"ffa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 拴绳(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:frmg"
+					]
+				},
+				"fga": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 鞍(250)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:frmh"
+					]
+				},
+				"fha": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 风弹(50)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:frmi"
+					]
+				},
+				"fia": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 猪(50)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:frma"
+					]
+				},
+				"fab": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon pig",
+						"/scoreboard players add @s score -50"
+					]
+				},
+				"fbb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon sheep",
+						"/scoreboard players add @s score -60"
+					]
+				},
+				"fcb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon chicken",
+						"/scoreboard players add @s score -40"
+					]
+				},
+				"fdb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon cow",
+						"/scoreboard players add @s score -80"
+					]
+				},
+				"feb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon horse",
+						"/scoreboard players add @s score -400"
+					]
+				},
+				"ffb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/summon rabbit",
+						"/scoreboard players add @s score -30"
+					]
+				},
+				"fgb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s lead",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"fhb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s saddle",
+						"/scoreboard players add @s score -250"
+					]
+				},
+				"fib": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s wind_charge",
+						"/scoreboard players add @s score -50"
+					]
+				}
+			}
+		}
+ 	}
+ }

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "rw"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:re"
+      },
+      {
+        "item": "copper_ingot"
+      }
+    ],
+    "result": {
+      "item": "items:cb",
+      "count": 3
+    }
+  }
+}

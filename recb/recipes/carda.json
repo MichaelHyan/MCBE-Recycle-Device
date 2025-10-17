@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:carda"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "aba"
+    ],
+    "key": {
+      "a": {
+        "item": "iron_ingot"
+      },
+      "b": {
+        "item": "gold_ingot"
+      }
+    },
+    "result": {
+      "item": "items:carda",
+      "count": 1
+    }
+  }
+}

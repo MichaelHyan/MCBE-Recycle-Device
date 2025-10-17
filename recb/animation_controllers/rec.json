@@ -1,0 +1,229 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.rec":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"raa":"query.get_equipped_item_name=='reca' && query.is_using_item && !query.is_sneaking"},
+						{"rba":"query.get_equipped_item_name=='recb' && query.is_using_item && !query.is_sneaking"},
+						{"rca":"query.get_equipped_item_name=='recc' && query.is_using_item && !query.is_sneaking"},
+						{"rda":"query.get_equipped_item_name=='recd' && query.is_using_item && !query.is_sneaking"},
+						{"rea":"query.get_equipped_item_name=='rece' && query.is_using_item && !query.is_sneaking"},
+						{"rfa":"query.get_equipped_item_name=='recf' && query.is_using_item && !query.is_sneaking"},
+						{"rga":"query.get_equipped_item_name=='recg' && query.is_using_item && !query.is_sneaking"},
+						{"rha":"query.get_equipped_item_name=='rech' && query.is_using_item && !query.is_sneaking"},
+						{"ria":"query.get_equipped_item_name=='reci' && query.is_using_item && !query.is_sneaking"},
+						{"rab":"query.get_equipped_item_name=='reca' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 50"},
+						{"rbb":"query.get_equipped_item_name=='recb' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"rcb":"query.get_equipped_item_name=='recc' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 20"},
+						{"rdb":"query.get_equipped_item_name=='recd' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 100"},
+						{"reb":"query.get_equipped_item_name=='rece' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 200"},
+						{"rfb":"query.get_equipped_item_name=='recf' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 50"},
+						{"rgb":"query.get_equipped_item_name=='recg' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 300"},
+						{"rhb":"query.get_equipped_item_name=='rech' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 1000"},
+						{"rib":"query.get_equipped_item_name=='reci' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 5000"}
+					]						
+				},
+				"raa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 橡木原木(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:recb"
+					]
+				},
+				"rba": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 煤炭(20)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:recc"
+					]
+				},
+				"rca": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 铁锭(100)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:recd"
+					]
+				},
+				"rda": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 金锭(200)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:rece"
+					]
+				},
+				"rea": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 青金石(50)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:recf"
+					]
+				},
+				"rfa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 绿宝石(300)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:recg"
+					]
+				},
+				"rga": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 钻石(1000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:rech"
+					]
+				},
+				"rha": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 下界合金锭(5000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:reci"
+					]
+				},
+				"ria": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 经验(50)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:reca"
+					]
+				},
+				"rab": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/xp 100 @s",
+						"/scoreboard players add @s score -50"
+					]
+				},
+				"rbb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s oak_log",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"rcb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s coal",
+						"/scoreboard players add @s score -20"
+					]
+				},
+				"rdb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s iron_ingot",
+						"/scoreboard players add @s score -100"
+					]
+				},
+				"reb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s gold_ingot",
+						"/scoreboard players add @s score -200"
+					]
+				},
+				"rfb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s lapis_lazuli",
+						"/scoreboard players add @s score -50"
+					]
+				},
+				"rgb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s emerald",
+						"/scoreboard players add @s score -300"
+					]
+				},
+				"rhb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s diamond",
+						"/scoreboard players add @s score -1000"
+					]
+				},
+				"rib": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s netherite_ingot",
+						"/scoreboard players add @s score -5000"
+					]
+				}
+			}
+		}
+ 	}
+ }

@@ -1,0 +1,57 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+	  "carda": {
+      "textures": "carda.png"
+    },
+    "cardb": {
+      "textures": "cardb.png"
+    },
+    "cardc": {
+      "textures": "cardc.png"
+    },
+    "ca": {
+      "textures": "ca.png"
+    },
+    "cb": {
+      "textures": "cb.png"
+    },
+    "cc": {
+      "textures": "cc.png"
+    },
+    "cd": {
+      "textures": "cd.png"
+    },
+    "re": {
+      "textures": "re.png"
+    },
+    "reca": {
+      "textures": "reca.png"
+    },
+    "recb": {
+      "textures": "recb.png"
+    },
+    "recc": {
+      "textures": "recc.png"
+    },
+    "recd": {
+      "textures": "recd.png"
+    },
+    "rece": {
+      "textures": "rece.png"
+    },
+    "recf": {
+      "textures": "recf.png"
+    },
+    "recg": {
+      "textures": "recg.png"
+    },
+    "rech": {
+      "textures": "rech.png"
+    },
+    "reci": {
+      "textures": "reci.png"
+    }
+  }
+}
