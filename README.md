@@ -15,7 +15,7 @@
 ## 功能
 
 使用两个铁锭和一个金锭合成卡片
-![](https://github.com/MichaelHyan/MCBE-Recycle-Device/blob/main/recr/cardc.png)
+![](https://github.com/MichaelHyan/MCBE-Recycle-Device/blob/main/recr/carda.png)
 
 使用卡片后将获得四个回收利用装置
 
@@ -25,7 +25,7 @@
 
 ## 回收系统
 
-![](https://github.com/MichaelHyan/MCBE-Recycle-Device/blob/main/recr/carda.png)
+![](https://github.com/MichaelHyan/MCBE-Recycle-Device/blob/main/recr/cardc.png)
 
 使用黄色卡片可以获得回收券，回收券和物品可合成点数券
 
