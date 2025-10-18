@@ -28,6 +28,16 @@ g lead 10
 h saddle 250
 i wind_charge 50
 --------------------------------
+a redstone 5
+b observer 20
+c piston 20 
+d sticky_piston 20 
+e repeater 10
+f comparator 10
+g hopper 10
+h dispensor 10
+i daylight_detector 10
+--------------------------------
 a rotten_meat 2
 b cobblestone 2
 c flint 5
@@ -46,8 +56,8 @@ o potato 5
 p breetroot 10
 q pumpkin 20
 r melon_slice 5
-s bamboo  10
-t deepslate_cobblestone 2
+s bamboo 10
+t deepslate 2
 u dirt 1
 v gravel
 w copper_ingot 50
@@ -92,7 +102,7 @@ bi paper 2
 bj quartz 5
 bk glowstone_dust 5
 bl cocoa_beans 2
-bm redstone_dust 2
+bm redstone 2
 bn ender_pearl 50
 bo iron_nugget 10
 bp gold_nugget 20
@@ -106,3 +116,11 @@ bw wheat_seeds 1
 bx breetroot_seeds 5
 by pumpkin_seeds 10
 bz melon_seeds 10
+ca observer 20
+cb piston 20 
+cc sticky_piston 20 
+cd repeater 10
+ce comparator 10
+cf hopper 10
+cg dispensor 10
+ch daylight_detector 10

@@ -13,6 +13,7 @@
 					"crp",
 					"cah",
 					"frm",
+					"red",
 					"cash",
 					"extra"
 				]
@@ -23,6 +24,7 @@
 				"crp": "controller.animation.crp",
 				"cah": "controller.animation.cah",
 				"frm": "controller.animation.frm",
+				"red": "controller.animation.red",
 				"cash": "controller.animation.cash",
 				"extra": "controller.animation.extra"
 			} 

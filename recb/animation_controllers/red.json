@@ -1,0 +1,229 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.red":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"daa":"query.get_equipped_item_name=='reda' && query.is_using_item && !query.is_sneaking"},
+						{"dba":"query.get_equipped_item_name=='redb' && query.is_using_item && !query.is_sneaking"},
+						{"dca":"query.get_equipped_item_name=='redc' && query.is_using_item && !query.is_sneaking"},
+						{"dda":"query.get_equipped_item_name=='redd' && query.is_using_item && !query.is_sneaking"},
+						{"dea":"query.get_equipped_item_name=='rede' && query.is_using_item && !query.is_sneaking"},
+						{"dfa":"query.get_equipped_item_name=='redf' && query.is_using_item && !query.is_sneaking"},
+						{"dga":"query.get_equipped_item_name=='redg' && query.is_using_item && !query.is_sneaking"},
+						{"dha":"query.get_equipped_item_name=='redh' && query.is_using_item && !query.is_sneaking"},
+						{"dia":"query.get_equipped_item_name=='redi' && query.is_using_item && !query.is_sneaking"},
+						{"dab":"query.get_equipped_item_name=='reda' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 5"},
+						{"dbb":"query.get_equipped_item_name=='redb' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 20"},
+						{"dcb":"query.get_equipped_item_name=='redc' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 20"},
+						{"ddb":"query.get_equipped_item_name=='redd' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 20"},
+						{"deb":"query.get_equipped_item_name=='rede' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"dfb":"query.get_equipped_item_name=='redf' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"dgb":"query.get_equipped_item_name=='redg' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"dhb":"query.get_equipped_item_name=='redh' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"dib":"query.get_equipped_item_name=='redi' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"}
+					]						
+				},
+				"daa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 观测器(20)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:redb"
+					]
+				},
+				"dba": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 活塞(20)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:redc"
+					]
+				},
+				"dca": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 粘性活塞(20)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:redd"
+					]
+				},
+				"dda": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 中继器(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:rede"
+					]
+				},
+				"dea": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 比较器(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:redf"
+					]
+				},
+				"dfa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 漏斗(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:redg"
+					]
+				},
+				"dga": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 发射器(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:redh"
+					]
+				},
+				"dha": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 阳光传感器(10)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:redi"
+					]
+				},
+				"dia": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 红石(5)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:reda"
+					]
+				},
+				"dab": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s redstone",
+						"/scoreboard players add @s score -5"
+					]
+				},
+				"dbb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s observer",
+						"/scoreboard players add @s score -20"
+					]
+				},
+				"dcb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s piston",
+						"/scoreboard players add @s score -20"
+					]
+				},
+				"ddb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s sticky_piston",
+						"/scoreboard players add @s score -20"
+					]
+				},
+				"deb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s repeater",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"dfb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s comparator",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"dgb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s hopper",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"dhb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s dispenser",
+						"/scoreboard players add @s score -10"
+					]
+				},
+				"dib": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s daylight_detector",
+						"/scoreboard players add @s score -10"
+					]
+				}
+			}
+		}
+ 	}
+ }
