@@ -129,4 +129,4 @@ cj granite 2
 ck diorite 2
 cl andesite 2
 cm blackstone 2
-cn bedrock 10000
+cn tuff 2
