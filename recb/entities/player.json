@@ -15,6 +15,7 @@
 					"frm",
 					"red",
 					"cash",
+					"cur",
 					"extra"
 				]
 			},
@@ -26,6 +27,7 @@
 				"frm": "controller.animation.frm",
 				"red": "controller.animation.red",
 				"cash": "controller.animation.cash",
+				"cur": "controller.animation.cur",
 				"extra": "controller.animation.extra"
 			} 
 		},

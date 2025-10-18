@@ -5,14 +5,14 @@
 "name":"回收利用装置",
 "uuid":"5d471440-61fb-4e31-b113-bd9263a2bf5a",
 "version":[1,1,0],
-"min_engine_version":[1,10,0]
+"min_engine_version":[1,2,0]
 },
 "modules":[
 {
 "description":"作者：韩言悦欣 zz纸张神探st",
 "type":"data",
 "uuid":"c0abab58-65ef-4070-b562-17e6b18be385",
-"version":[1,1,0]
+"version":[1,2,0]
 }
 ],
 "metadata": { "product_type": "addon" }

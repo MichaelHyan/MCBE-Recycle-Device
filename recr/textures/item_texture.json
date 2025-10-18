@@ -53,6 +53,60 @@
     "reci": {
       "textures": "reci.png"
     },
+    "cura": {
+      "textures": "cura.png"
+    },
+    "curb": {
+      "textures": "curb.png"
+    },
+    "curc": {
+      "textures": "curc.png"
+    },
+    "curd": {
+      "textures": "curd.png"
+    },
+    "cure": {
+      "textures": "cure.png"
+    },
+    "curf": {
+      "textures": "curf.png"
+    },
+    "curg": {
+      "textures": "curg.png"
+    },
+    "curh": {
+      "textures": "curh.png"
+    },
+    "curi": {
+      "textures": "curi.png"
+    },
+    "reda": {
+      "textures": "reda.png"
+    },
+    "redb": {
+      "textures": "redb.png"
+    },
+    "redc": {
+      "textures": "redc.png"
+    },
+    "redd": {
+      "textures": "redd.png"
+    },
+    "rede": {
+      "textures": "rede.png"
+    },
+    "redf": {
+      "textures": "redf.png"
+    },
+    "redg": {
+      "textures": "redg.png"
+    },
+    "redh": {
+      "textures": "redh.png"
+    },
+    "redi": {
+      "textures": "redi.png"
+    },
     "jetpack": {
       "textures": "jetpack.png"
     }

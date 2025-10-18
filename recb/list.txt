@@ -1,3 +1,4 @@
+--------------------------------standard
 a xp 50
 b oak_log 10
 c coal 20
@@ -7,7 +8,7 @@ f lapis_lazuli 50
 g emerald 300
 h diamond 1000
 i netherite_ingot 5000
----------------------------------
+---------------------------------crop
 a wheat_seeds 1
 b carrot 5
 c sugar_cane 5
@@ -17,7 +18,7 @@ f pumpkin_seeds 10
 g melon_seeds 10
 h bamboo  10
 i villager 1000	
---------------------------------
+--------------------------------farm
 a pig 50
 b sheep 60 
 c chicken 40
@@ -27,7 +28,7 @@ f rabbit 30
 g lead 10
 h saddle 250
 i wind_charge 50
---------------------------------
+--------------------------------redstone
 a redstone 5
 b observer 20
 c piston 20 
@@ -37,7 +38,17 @@ f comparator 10
 g hopper 10
 h dispensor 10
 i daylight_detector 10
---------------------------------
+--------------------------------curse
+a mace 3000
+b experience_bottle 100
+c name_tag 1000
+d heart_of_the_sea 10000
+e trident 1000
+f nether_star 10000
+g bedrock 100000
+h ender_eye 500
+i enchanted_golden_apple 1000
+--------------------------------recycle
 a rotten_meat 2
 b cobblestone 2
 c flint 5
@@ -130,3 +141,7 @@ ck diorite 2
 cl andesite 2
 cm blackstone 2
 cn tuff 2
+co cobbled_deepslate 2
+cp arrow 2
+cq bow 10
+cr crossbow 20

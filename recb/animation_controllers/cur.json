@@ -1,0 +1,229 @@
+{
+	"format_version": "1.8.0",
+	"animation_controllers": {
+		"controller.animation.cur":{
+			"states":{
+				"base_jeta":{
+					"transitions":[
+						{"uaa":"query.get_equipped_item_name=='cura' && query.is_using_item && !query.is_sneaking"},
+						{"uba":"query.get_equipped_item_name=='curb' && query.is_using_item && !query.is_sneaking"},
+						{"uca":"query.get_equipped_item_name=='curc' && query.is_using_item && !query.is_sneaking"},
+						{"uda":"query.get_equipped_item_name=='curd' && query.is_using_item && !query.is_sneaking"},
+						{"uea":"query.get_equipped_item_name=='cure' && query.is_using_item && !query.is_sneaking"},
+						{"ufa":"query.get_equipped_item_name=='curf' && query.is_using_item && !query.is_sneaking"},
+						{"uga":"query.get_equipped_item_name=='curg' && query.is_using_item && !query.is_sneaking"},
+						{"uha":"query.get_equipped_item_name=='curh' && query.is_using_item && !query.is_sneaking"},
+						{"uia":"query.get_equipped_item_name=='curi' && query.is_using_item && !query.is_sneaking"},
+						{"uab":"query.get_equipped_item_name=='cura' && query.is_using_item && query.is_sneaking"},
+						{"ubb":"query.get_equipped_item_name=='curb' && query.is_using_item && query.is_sneaking"},
+						{"ucb":"query.get_equipped_item_name=='curc' && query.is_using_item && query.is_sneaking"},
+						{"udb":"query.get_equipped_item_name=='curd' && query.is_using_item && query.is_sneaking"},
+						{"ueb":"query.get_equipped_item_name=='cure' && query.is_using_item && query.is_sneaking"},
+						{"ufb":"query.get_equipped_item_name=='curf' && query.is_using_item && query.is_sneaking"},
+						{"ugb":"query.get_equipped_item_name=='curg' && query.is_using_item && query.is_sneaking"},
+						{"uhb":"query.get_equipped_item_name=='curh' && query.is_using_item && query.is_sneaking"},
+						{"uib":"query.get_equipped_item_name=='curi' && query.is_using_item && query.is_sneaking"}
+					]						
+				},
+				"uaa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 经验瓶(100)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:curb"
+					]
+				},
+				"uba": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 命名牌(1000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:curc"
+					]
+				},
+				"uca": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 海洋之心(10000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:curd"
+					]
+				},
+				"uda": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 三叉戟(1000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:cure"
+					]
+				},
+				"uea": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 下界之星(10000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:curf"
+					]
+				},
+				"ufa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 基岩(100000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:curg"
+					]
+				},
+				"uga": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 末影之眼(500)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:curh"
+					]
+				},
+				"uha": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 附魔金苹果(1000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:curi"
+					]
+				},
+				"uia": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 重锤(3000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:cura"
+					]
+				},
+				"uab": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s mace",
+						"/scoreboard players add @s score -3000"
+					]
+				},
+				"ubb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s experience_bottle",
+						"/scoreboard players add @s score -100"
+					]
+				},
+				"ucb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s name_tag",
+						"/scoreboard players add @s score -1000"
+					]
+				},
+				"udb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s heart_of_the_sea",
+						"/scoreboard players add @s score -10000"
+					]
+				},
+				"ueb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s trident",
+						"/scoreboard players add @s score -1000"
+					]
+				},
+				"ufb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s nether_star",
+						"/scoreboard players add @s score -10000"
+					]
+				},
+				"ugb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s bedrock",
+						"/scoreboard players add @s score -100000"
+					]
+				},
+				"uhb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s ender_eye",
+						"/scoreboard players add @s score -500"
+					]
+				},
+				"uib": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s enchanted_golden_apple ",
+						"/scoreboard players add @s score -1000"
+					]
+				}
+			}
+		}
+ 	}
+ }

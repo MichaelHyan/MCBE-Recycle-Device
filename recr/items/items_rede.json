@@ -6,9 +6,9 @@
       "category": "Nature"
     },
     "components": {
-      "minecraft:icon": "rece",
+      "minecraft:icon": "rede",
       "minecraft:hover_text_color": "light_purple",
-      "minecraft:render_offsets": "rece"
+      "minecraft:render_offsets": "rede"
     }
   }
 }

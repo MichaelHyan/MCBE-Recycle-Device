@@ -2,13 +2,13 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "items:redg",
+      "identifier": "items:curh",
       "category": "Nature"
     },
     "components": {
-      "minecraft:icon": "redg",
+      "minecraft:icon": "curh",
       "minecraft:hover_text_color": "light_purple",
-      "minecraft:render_offsets": "redg"
+      "minecraft:render_offsets": "curh"
     }
   }
 }

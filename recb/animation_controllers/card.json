@@ -7,7 +7,8 @@
 					"transitions":[
 						{"karda":"query.get_equipped_item_name=='carda' && query.is_using_item"},
 						{"kardb":"query.get_equipped_item_name=='cardb' && query.is_using_item"},
-						{"kardc":"query.get_equipped_item_name=='cardc' && query.is_using_item"}
+						{"kardc_a":"query.get_equipped_item_name=='cardc' && query.is_using_item && query.scoreboard('score') >= -10000"},
+						{"kardc_b":"query.get_equipped_item_name=='cardc' && query.is_using_item && query.scoreboard('score') < -10000"}
 					]
 				},
 				"karda": {
@@ -37,7 +38,7 @@
 						"/scoreboard players add @s score 100"
 					]
 				},
-				"kardc": {
+				"kardc_a": {
 					"transitions": [
 							{
 								"base_jeta": "(1.0)"
@@ -45,6 +46,17 @@
 					],
 					"on_entry": [
 						"/give @s items:re"
+					]
+				},
+				"kardc_b": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:re",
+						"/effect @s wither infinite 1 true"
 					]
 				}
 			}

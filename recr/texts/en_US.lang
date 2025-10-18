@@ -45,6 +45,14 @@ item.items:rede.name=recycling device(redstone)
 item.items:redf.name=recycling device(redstone)
 item.items:redg.name=recycling device(redstone)
 item.items:redh.name=recycling device(redstone)
-item.items:redi.name=recycling device(redstone)
+item.items:cura.name=cursed device
+item.items:curb.name=cursed device
+item.items:curc.name=cursed device
+item.items:curd.name=cursed device
+item.items:cure.name=cursed device
+item.items:curf.name=cursed device
+item.items:curg.name=cursed device
+item.items:curh.name=cursed device
+item.items:curi.name=cursed device
 item.items:jetpack.name=jet pack
 
