@@ -13,7 +13,8 @@
 					"crp",
 					"cah",
 					"frm",
-					"cash"
+					"cash",
+					"extra"
 				]
 			},
 			"animations": {
@@ -22,7 +23,8 @@
 				"crp": "controller.animation.crp",
 				"cah": "controller.animation.cah",
 				"frm": "controller.animation.frm",
-				"cash": "controller.animation.cash"
+				"cash": "controller.animation.cash",
+				"extra": "controller.animation.extra"
 			} 
 		},
 		"component_groups": {

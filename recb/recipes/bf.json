@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "rbf"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:re"
+      },
+      {
+        "item": "blaze_rod"
+      }
+    ],
+    "result": {
+      "item": "items:cb",
+      "count": 1
+    }
+  }
+}

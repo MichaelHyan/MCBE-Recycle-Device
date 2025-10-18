@@ -37,3 +37,5 @@ item.items:frmf.name=recycling device(farming)
 item.items:frmg.name=recycling device(farming)
 item.items:frmh.name=recycling device(farming)
 item.items:frmi.name=recycling device(farming)
+item.items:jetpack.name=jet pack
+

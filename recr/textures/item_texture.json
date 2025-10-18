@@ -52,6 +52,9 @@
     },
     "reci": {
       "textures": "reci.png"
+    },
+    "jetpack": {
+      "textures": "jetpack.png"
     }
   }
 }

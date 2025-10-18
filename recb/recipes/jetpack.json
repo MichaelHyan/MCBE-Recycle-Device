@@ -1,0 +1,37 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:jetpack"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "dcd",
+      "bab",
+      "beb"
+    ],
+    "key": {
+      "a": {
+        "item": "redstone"
+      },
+      "b": {
+        "item": "iron_ingot"
+      },
+      "c": {
+        "item": "copper_ingot"
+      },
+      "d": {
+        "item": "quartz"
+      },
+      "e": {
+        "item": "gunpowder"
+      }
+    },
+    "result": {
+      "item": "items:jetpack",
+      "count": 1
+    }
+  }
+}

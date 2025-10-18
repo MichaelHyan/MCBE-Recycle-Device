@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "rbg"
+    },
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "items:re"
+      },
+      {
+        "item": "slime_ball"
+      }
+    ],
+    "result": {
+      "item": "items:ca",
+      "count": 5
+    }
+  }
+}
