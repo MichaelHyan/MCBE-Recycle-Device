@@ -17,6 +17,8 @@
 使用两个铁锭和一个金锭合成卡片
 ![](https://github.com/MichaelHyan/MCBE-Recycle-Device/blob/main/recr/carda.png)
 
+如果启用奖励箱的话可以直接从箱子中获取
+
 使用卡片后将获得5个回收利用装置
 
 以及一张黄色卡片
@@ -205,3 +207,9 @@
 - cf 漏斗 hopper 10
 - cg 发射器 dispensor 10
 - ch 阳光传感器 daylight_detector 10
+- ci 石头 stone 2
+- cj 花岗岩 granite 2
+- ck 闪长岩 diorite 2
+- cl 安山岩 andesite 2
+- cm 黑石 blackstone 2
+- cn 凝灰岩 tuff 2
