@@ -6,9 +6,9 @@
       "category": "Nature"
     },
     "components": {
-      "minecraft:icon": "recf",
+      "minecraft:icon": "recb",
       "minecraft:hover_text_color": "light_purple",
-      "minecraft:render_offsets": "recf"
+      "minecraft:render_offsets": "recb"
     }
   }
 }

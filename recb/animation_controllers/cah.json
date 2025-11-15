@@ -9,10 +9,16 @@
 						{"hba":"query.get_equipped_item_name=='cahb' && query.is_using_item && !query.is_sneaking"},
 						{"hca":"query.get_equipped_item_name=='cahc' && query.is_using_item && !query.is_sneaking"},
 						{"hda":"query.get_equipped_item_name=='cahd' && query.is_using_item && !query.is_sneaking"},
+						{"hea":"query.get_equipped_item_name=='cahe' && query.is_using_item && !query.is_sneaking"},
+						{"hfa":"query.get_equipped_item_name=='cahf' && query.is_using_item && !query.is_sneaking"},
+						{"hga":"query.get_equipped_item_name=='cahg' && query.is_using_item && !query.is_sneaking"},
 						{"hab":"query.get_equipped_item_name=='caha' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 1"},
-						{"hbb":"query.get_equipped_item_name=='cahb' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
-						{"hcb":"query.get_equipped_item_name=='cahc' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 100"},
-						{"hdb":"query.get_equipped_item_name=='cahd' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 1000"}
+						{"hbb":"query.get_equipped_item_name=='cahb' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 5"},
+						{"hcb":"query.get_equipped_item_name=='cahc' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 10"},
+						{"hdb":"query.get_equipped_item_name=='cahd' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 50"},
+						{"heb":"query.get_equipped_item_name=='cahe' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 100"},
+						{"hfb":"query.get_equipped_item_name=='cahf' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 500"},
+						{"hgb":"query.get_equipped_item_name=='cahg' && query.is_using_item && query.is_sneaking && query.scoreboard('score') >= 1000"}
 					]						
 				},
 				"haa": {
@@ -22,7 +28,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @s actionbar 兑换 点数(10)",
+						"/title @s actionbar 兑换 点数(5)",
 						"/replaceitem entity @s slot.weapon.mainhand 0 items:cahb"
 					]
 				},
@@ -33,7 +39,7 @@
 							}
 					],
 					"on_entry": [
-						"/title @s actionbar 兑换 点数(100)",
+						"/title @s actionbar 兑换 点数(10)",
 						"/replaceitem entity @s slot.weapon.mainhand 0 items:cahc"
 					]
 				},
@@ -44,11 +50,44 @@
 							}
 					],
 					"on_entry": [
-						"/title @s actionbar 兑换 点数(1000)",
+						"/title @s actionbar 兑换 点数(50)",
 						"/replaceitem entity @s slot.weapon.mainhand 0 items:cahd"
 					]
 				},
 				"hda": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 点数(100)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:cahe"
+					]
+				},
+				"hea": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 点数(500)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:cahf"
+					]
+				},
+				"hfa": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/title @s actionbar 兑换 点数(1000)",
+						"/replaceitem entity @s slot.weapon.mainhand 0 items:cahg"
+					]
+				},
+				"hga": {
 					"transitions": [
 							{
 								"base_jeta": "(1.0)"
@@ -77,11 +116,33 @@
 							}
 					],
 					"on_entry": [
+						"/give @s items:ce",
+						"/scoreboard players add @s score -5"
+					]
+				},
+				"hcb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
 						"/give @s items:cb",
 						"/scoreboard players add @s score -10"
 					]
 				},
-				"hcb": {
+				"hdb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:cf",
+						"/scoreboard players add @s score -50"
+					]
+				},
+				"heb": {
 					"transitions": [
 							{
 								"base_jeta": "(1.0)"
@@ -92,7 +153,18 @@
 						"/scoreboard players add @s score -100"
 					]
 				},
-				"hdb": {
+				"hfb": {
+					"transitions": [
+							{
+								"base_jeta": "(1.0)"
+							}
+					],
+					"on_entry": [
+						"/give @s items:cg",
+						"/scoreboard players add @s score -500"
+					]
+				},
+				"hgb": {
 					"transitions": [
 							{
 								"base_jeta": "(1.0)"

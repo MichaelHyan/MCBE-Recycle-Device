@@ -2,13 +2,13 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "items:caha",
+      "identifier": "items:cahf",
       "category": "Nature"
     },
     "components": {
-      "minecraft:icon": "reca",
+      "minecraft:icon": "recf",
       "minecraft:hover_text_color": "light_purple",
-      "minecraft:render_offsets": "reca"
+      "minecraft:render_offsets": "recf"
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:cahd"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "aa"
+    ],
+    "key": {
+      "a": {
+        "item": "items:ce"
+      }
+    },
+    "result": {
+      "item": "items:cb",
+      "count": 1
+    }
+  }
+}

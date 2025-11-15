@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "items:cahe"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "aa"
+    ],
+    "key": {
+      "a": {
+        "item": "items:cf"
+      }
+    },
+    "result": {
+      "item": "items:cc",
+      "count": 1
+    }
+  }
+}

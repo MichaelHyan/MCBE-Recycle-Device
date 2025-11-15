@@ -23,6 +23,15 @@
     "cd": {
       "textures": "cd.png"
     },
+    "ce": {
+      "textures": "ce.png"
+    },
+    "cf": {
+      "textures": "cf.png"
+    },
+    "cg": {
+      "textures": "cg.png"
+    },
     "re": {
       "textures": "re.png"
     },
